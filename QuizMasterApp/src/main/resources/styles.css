@@ -1,0 +1,344 @@
+/* quiz-styles.css */
+
+/* Global Styles */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #1e3c72, #2a5298);
+    /*-fx-background-color: linear-gradient(to bottom, #667eea 0%, #764ba2 100%);*/
+}
+
+/* Menu Scene Styles */
+.menu-root {
+    -fx-background-color: linear-gradient(to bottom, #1e3c72, #2a5298);
+    -fx-spacing: 25;
+    /*-fx-background-color: linear-gradient(to bottom, #667eea 0%, #764ba2 100%);*/
+}
+
+.title-label {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 2);
+}
+
+.subtitle-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #e8e8e8;
+    -fx-font-style: italic;
+}
+
+.category-combo {
+    -fx-font-size: 16px;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 45px;
+    -fx-background-color: white;
+    -fx-border-color: #4a5568;
+    -fx-border-width: 2px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+
+.category-combo .list-cell {
+    -fx-font-size: 14px;
+    -fx-padding: 8px 12px;
+}
+
+/* Button Styles */
+.primary-button {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 50px;
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #45a049);
+    -fx-text-fill: white;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #7cd67c, #6ac36a); /* light green gradient */
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.primary-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #6ac36a, #5aad5a); /* slightly darker for pressed */
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+.secondary-button {
+    -fx-font-size: 14px;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 45px;
+
+    /* Light blue gradient */
+    -fx-background-color: linear-gradient(to bottom, #a8d8ff, #80c1ff); /* soft sky blue shades */
+
+    -fx-text-fill: #003d80; /* dark blue text for contrast */
+    -fx-border-radius: 22px;
+    -fx-background-radius: 22px;
+}
+
+.secondary-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #cce6ff, #99d4ff); /* even lighter on hover */
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+/* Quiz Scene Styles */
+.quiz-root {
+    -fx-background-color: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+}
+
+.score-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 10px 15px;
+    -fx-background-color: #ecf0f1;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+
+.timer-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #27ae60;
+    -fx-padding: 10px 15px;
+    -fx-background-color: #d5f4e6;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+
+.timer-warning {
+    -fx-text-fill: #e74c3c;
+    -fx-background-color: #fdf2f2;
+    -fx-effect: dropshadow(gaussian, rgba(231,76,60,0.3), 5, 0, 0, 0);
+}
+
+.progress-bar {
+    -fx-pref-height: 8px;
+    -fx-accent: #4CAF50;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 4px;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: linear-gradient(to right, #4CAF50, #45a049);
+    -fx-background-radius: 4px;
+}
+
+.question-box {
+    -fx-background-color: white;
+    -fx-padding: 25px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.question-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-wrap-text: true;
+}
+
+.equation-label {
+    -fx-font-size: 24px;
+    -fx-font-family: "Times New Roman", serif;
+    -fx-text-fill: #34495e;
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 15px;
+    -fx-border-color: #dee2e6;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-alignment: center;
+}
+
+.option-button {
+    -fx-font-size: 16px;
+    -fx-padding: 12px 20px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ced4da;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 3, 0, 0, 1);
+}
+
+.option-button:hover {
+    -fx-border-color: #007bff;
+    -fx-background-color: #f8f9ff;
+}
+
+.option-button:selected {
+    -fx-border-color: #007bff;
+    -fx-background-color: #e3f2fd;
+}
+
+.correct-option {
+    -fx-border-color: #28a745 !important;
+    -fx-background-color: #d4edda !important;
+    -fx-text-fill: #155724;
+    -fx-effect: dropshadow(gaussian, rgba(40,167,69,0.3), 5, 0, 0, 0);
+}
+
+.incorrect-option {
+    -fx-border-color: #dc3545 !important;
+    -fx-background-color: #f8d7da !important;
+    -fx-text-fill: #721c24;
+    -fx-effect: dropshadow(gaussian, rgba(220,53,69,0.3), 5, 0, 0, 0);
+}
+
+/* Result Scene Styles */
+.result-root {
+    -fx-background-color: linear-gradient(to bottom, #1e3c72, #2a5298);
+}
+
+.accuracy-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-padding: 15px 25px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0, 0, 2);
+}
+
+.recommendation-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #f8f9fa;
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-padding: 20px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-max-width: 500px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.achievements-label {
+    -fx-text-fill: #ffffff;
+}
+
+.achievements-area {
+    -fx-font-size: 14px;
+    -fx-background-color: rgba(255,255,255,0.9);
+    -fx-border-color: #ced4da;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 15px;
+    -fx-pref-width: 500px;
+    -fx-max-width: 500px;
+}
+
+.achievements-area .content {
+    -fx-background-color: transparent;
+}
+
+/* Animation Effects */
+@keyframes pulse {
+    0% { -fx-scale-x: 1; -fx-scale-y: 1; }
+    50% { -fx-scale-x: 1.05; -fx-scale-y: 1.05; }
+    100% { -fx-scale-x: 1; -fx-scale-y: 1; }
+}
+
+@keyframes shake {
+    0%, 100% { -fx-translate-x: 0; }
+    10%, 30%, 50%, 70%, 90% { -fx-translate-x: -5px; }
+    20%, 40%, 60%, 80% { -fx-translate-x: 5px; }
+}
+
+/* Responsive Design */
+.quiz-root .button {
+    -fx-min-width: 120px;
+}
+
+/* Dark Mode Support */
+.dark-theme {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #34495e);
+}
+
+.dark-theme .question-box {
+    -fx-background-color: #34495e;
+}
+
+.dark-theme .question-label {
+    -fx-text-fill: #ecf0f1;
+}
+
+.dark-theme .option-button {
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: #ecf0f1;
+    -fx-border-color: #34495e;
+}
+
+/* Accessibility */
+.button:focused {
+    -fx-border-color: #007bff;
+    -fx-border-width: 3px;
+}
+
+.option-button:focused {
+    -fx-border-color: #007bff;
+    -fx-border-width: 3px;
+}
+
+/* High Contrast Mode */
+.high-contrast .title-label {
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, #000000, 2, 0, 1, 1);
+}
+
+.high-contrast .option-button {
+    -fx-border-width: 3px;
+}
+
+.high-contrast .correct-option {
+    -fx-border-width: 4px !important;
+}
+
+.high-contrast .incorrect-option {
+    -fx-border-width: 4px !important;
+}
+
+/* Mobile/Touch Friendly */
+@media (max-width: 600px) {
+    .primary-button, .secondary-button {
+        -fx-pref-height: 55px;
+        -fx-font-size: 18px;
+    }
+
+    .option-button {
+        -fx-padding: 15px 20px;
+        -fx-font-size: 18px;
+    }
+
+    .question-label {
+        -fx-font-size: 22px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .root {
+        -fx-background-color: white;
+    }
+
+    .primary-button, .secondary-button {
+        -fx-background-color: #f8f9fa;
+        -fx-text-fill: black;
+        -fx-border-color: black;
+        -fx-border-width: 1px;
+    }
+}
