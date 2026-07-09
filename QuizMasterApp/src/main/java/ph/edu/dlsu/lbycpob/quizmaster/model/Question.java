@@ -37,7 +37,25 @@ public class Question {
     }
 
     // Setters
-    // TODO:
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public void setQuestionText(String questionText) {
+        this.questionText = questionText;
+    }
+
+    public void setOptions(List<String> options) {
+        this.options = options;
+    }
+
+    public void setCorrectAnswer(int correctAnswer) {
+        this.correctAnswer = correctAnswer;
+    }
+
+    public void setEquation(String equation) {
+        this.equation = equation;
+    }
 
     @Override
     public String toString() {
