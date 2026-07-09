@@ -59,7 +59,13 @@ public class Question {
 
     @Override
     public String toString() {
-        return " "; // TODO:
+        return "Question{" +
+                "category='" + category + '\'' +
+                ", questionText='" + questionText + '\'' +
+                ", options=" + options +
+                ", correctAnswer=" + correctAnswer +
+                ", equation='" + equation + '\'' +
+                '}';
     }
 }
 
