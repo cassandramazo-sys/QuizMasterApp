@@ -16,7 +16,25 @@ public class Question {
     }
 
     // Getters
-    // TODO:
+    public String getCategory() {
+        return category;
+    }
+
+    public String getQuestionText() {
+        return questionText;
+    }
+
+    public List<String> getOptions() {
+        return options;
+    }
+
+    public int getCorrectAnswer() {
+        return correctAnswer;
+    }
+
+    public String getEquation() {
+        return equation;
+    }
 
     // Setters
     // TODO:
