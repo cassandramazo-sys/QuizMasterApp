@@ -5,7 +5,11 @@ import java.util.List;
 
 // Question.java
 public class Question {
-   // TODO: Add the data attributes
+    private String category;
+    private String questionText;
+    private List<String> options;
+    private int correctAnswer; // Index of the correct option (0, 1, 2, or 3)
+    private String equation;
 
     public Question(String category, String questionText, List<String> options, int correctAnswer, String equation) {
         this.category = category;
