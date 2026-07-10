@@ -1,4 +1,4 @@
-module ph.edu.dlsu.lbycpei.quizmaster {
+module ph.edu.dlsu.lbycpob.quizmaster {
     requires javafx.controls;
     requires javafx.media;
     requires java.desktop;

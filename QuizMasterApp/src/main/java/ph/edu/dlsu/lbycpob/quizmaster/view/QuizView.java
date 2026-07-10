@@ -65,6 +65,7 @@ public class QuizView {
         menuRoot.setAlignment(Pos.CENTER);
         menuRoot.setPadding(new Insets(50));
         menuRoot.getStyleClass().add("menu-root");
+        menuRoot.setStyle("-fx-background-color: #9d825d;");
 
         Label titleLabel = new Label(" LBYCPOB Math Quiz Master");
         titleLabel.getStyleClass().add("title-label");
